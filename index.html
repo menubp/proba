@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>ГАФ фестивал</title>
+   </head>
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#"><img src="slike/logo.png" alt="" style="width: 60%;margin-top: 12px;"></a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name"><img src="slike/logo.png" alt=""></span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="index.html">Почетна</a></li>
+          <li>
+            <a href="gaf.html">ГАФ</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="gaf.html">о фестивалу</a></li>
+              <li><a href="gaf.html#text-2">тим фестивала (2023)</a></li>
+              <li><a href="gaf.html">пријатељи и спонзори</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="propozicije.html">Пропозиције</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="propozicije.html">пропозиције (2023)</a></li>
+            </ul>
+          </li>
+          <li><a href="radovi.html">Радови</a></li>
+          <li>
+            <a href="galerija.html">Галерија</a>
+            <i class='bx bxs-chevron-down more-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="galerija.html">иза сцене (2023)</a></li>
+            </ul>
+          </li>
+          <li><a href="kontakt.html">Контакт</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Ускоро...">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script>
+      
+let navbar = document.querySelector(".navbar");
+let searchBox = document.querySelector(".search-box .bx-search");
+
+
+searchBox.addEventListener("click", ()=>{
+  navbar.classList.toggle("showInput");
+  if(navbar.classList.contains("showInput")){
+    searchBox.classList.replace("bx-search" ,"bx-x");
+  }else {
+    searchBox.classList.replace("bx-x" ,"bx-search");
+  }
+});
+
+
+let navLinks = document.querySelector(".nav-links");
+let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+menuOpenBtn.onclick = function() {
+navLinks.style.left = "0";
+}
+menuCloseBtn.onclick = function() {
+navLinks.style.left = "-100%";
+}
+
+
+
+let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+htmlcssArrow.onclick = function() {
+ navLinks.classList.toggle("show1");
+}
+let moreArrow = document.querySelector(".more-arrow");
+moreArrow.onclick = function() {
+ navLinks.classList.toggle("show2");
+}
+let jsArrow = document.querySelector(".js-arrow");
+jsArrow.onclick = function() {
+ navLinks.classList.toggle("show3");
+}
+  </script>
+
+<!--BANNER-->
+<div class="start-banner content">
+  <div class="main-line">
+    <div class="line-color"></div>
+  </div>
+  <div class="banner content">
+    <div class="section-1">
+    <!--мицут--->  
+    <div class="image-section">
+      <img src="slike/gaf plakat.png" alt="Plakat za GAF">
+    </div>
+    <!--masdasd-->
+  </div>
+  <div class="section-2">
+    <video src="slike/pretvoren.mp4" autoplay controls muted width="500px"></video>
+  </div>
+  <a href="#"></a>
+ </div>
+</div>
+ <!--Prva sekcija-->
+  <div class="main-container content">
+    <div class="main-line">
+      <div class="line-color color"></div>
+    </div>
+  <div class="container-2">
+    <div class="video-section">
+      <img src="slike/tamnoplav_tekst.gif" utoplay controls muted width="500px" alt="">
+    </div>
+    <div class="text-section">
+      <h2>ГАФ</h2>
+      <p>ГАФ, гимназијски ауторски фестивал, пројекат је ученика Гимназије ,,20.
+        октобар”. Мото нашег филмског и музичког фестивала је ,,Даље нећеш моћи!”
+        и инспирисан је филмом ,,Ко то тамо пева”.
+        Отварамо врата потпуне слободе и подстичемо максималну креативност, без
+        било каквог вида ограничења.</p>
+      </div>
+     
+    </div>
+  </div>
+  </div>
+<!--Kraj prve sekcije-->
+<!--Pocetak druge sekcije-->
+<div class="main-container">
+  <!--<div class="main-line">
+      <div class="line-color"></div>
+    </div>-->
+  <div class="section-2">
+      <div class="text-section-2">
+        <h2>Даље нећеш моћи!</h2>
+        <p>Младост је та која прелази преко зацртаних граница и корача. Стварамо свој
+          простор, постављамо своја правила... Младост не прихвата глаголе морати,
+          забранити и одустати. Она трчи ка жељи, слободи и стваралаштву. На
+          чувену реченицу: ,,Даље нећеш моћи!” – реци: ,,Хоћу, јер ја одређујем свој пут.
+          ” Укажи на грешке које су већ начињене − твој поглед је оштрији. Одреди свој
+          уметнички правац. Слушај и стварај музику коју желиш и у којој истински
+          уживаш, негуј стил у ком се осећаш најудобније и најлепше. Бори се
+          стварањем, а не рушењем.
+          Ми те позивамо да своје стваралаштво покажеш и поделиш с нама, и да
+          станеш на пут свему ономе што је лоше.</p>
+      </div>
+      <div>
+        <a href=""><img class="img" src="slike/daljenecesmoci.png" alt=""></a>
+      </div>
+  </div>
+</div>
+<!--Kraj druge sekcije-->
+</body>
+</html>

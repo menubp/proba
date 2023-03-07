@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="gaf.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>ГАФ</title>
+   </head>
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="index.html"><img src="slike/logo.png" alt="" style="width: 60%;margin-top: 12px;"></a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name"><img src="slike/logo.png" alt=""></span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="index.html">Почетна</a></li>
+          <li>
+            <a href="gaf.html">ГАФ</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="gaf.html">о фестивалу</a></li>
+              <li><a href="gaf.html">тим фестивала (2023)</a></li>
+              <li><a href="gaf.html">пријатељи и спонзори</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="propozicije.html">Пропозиције</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="propozicije.html">пропозиције (2023)</a></li>
+            </ul>
+          </li>
+          <li><a href="radovi.html">Радови</a></li>
+          <li>
+            <a href="galerija.html">Галерија</a>
+            <i class='bx bxs-chevron-down more-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="galerija.html">иза сцене (2023)</a></li>
+            </ul>
+          </li>
+          <li><a href="kontakt.html">Контакт</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Ускоро...">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script>
+      
+let navbar = document.querySelector(".navbar");
+let searchBox = document.querySelector(".search-box .bx-search");
+
+
+searchBox.addEventListener("click", ()=>{
+  navbar.classList.toggle("showInput");
+  if(navbar.classList.contains("showInput")){
+    searchBox.classList.replace("bx-search" ,"bx-x");
+  }else {
+    searchBox.classList.replace("bx-x" ,"bx-search");
+  }
+});
+
+
+let navLinks = document.querySelector(".nav-links");
+let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+menuOpenBtn.onclick = function() {
+navLinks.style.left = "0";
+}
+menuCloseBtn.onclick = function() {
+navLinks.style.left = "-100%";
+}
+
+
+
+let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+htmlcssArrow.onclick = function() {
+ navLinks.classList.toggle("show1");
+}
+let moreArrow = document.querySelector(".more-arrow");
+moreArrow.onclick = function() {
+ navLinks.classList.toggle("show2");
+}
+let jsArrow = document.querySelector(".js-arrow");
+jsArrow.onclick = function() {
+ navLinks.classList.toggle("show3");
+}
+  </script>
+
+<div class="main-container content">
+    <div class="main-line">
+          <div class="line-color"></div>
+        </div>
+    <div class="first-text">
+      <h2>О <span style="color: #8B0000;">фестивалу</span></h2>
+      <p>
+        Гимназијски ауторски фестивал кратког филма и музике пројекат је Гимназије
+        „20. октобар“ у Бачкој Паланци. Идеја је потекла од ученика који похађају
+        изборни програм уметност и дизајн. Поред нас, пројекту су се придружили и
+        други ученици, као и професори наше школе. Овогодишњи мото фестивала је
+        „Даље нећеш моћи“ и инспирисан је култним филмом „Ко то тамо пева“. Наша
+        идеја је да ГАФ постане традиција Гимназије „20. октобар“, али да се мото
+        мења из године у годину. Фестивал ће се ове године састојати од такмичарског
+        
+        (филмског) програма и ревијалног (музичког) дела. Желимо да млади кроз
+        своје филмове и своју музику испоље креативност и слободу. Ово је место где
+        нема жанровског одређења, нема цензуре, свако има свој стил, правац и
+        видик. ГАФ позива све гимназијалце на територији Републике Србије да се
+        придруже. Фестивал ће бити измештен из школског амбијента и трајаће два
+        дана, у току којих има довољно места за дружење, размењивање идеја и
+        искустава.
+        Драги наши гимназијалци, позивамо вас од срца.
+        Добро нам дошли!</p>
+    </div>
+    <div class="text-2">
+      <h2>Тим фестивала 2023:</h2>
+      <ul>
+        <li>Гимназија „20. октобар“ у Бачкој Паланци − ученици
+        уметности и дизајна (идејни творци фестивала);</li>
+        <li>Теодора Кнежевић (назив фестивала);</li>
+        <li>Теодора Козомора (лого фестивала);</li>
+        <li>Лазар Магазин (аутор коришћене анимације за лого школе);</li>
+        <li>Младен Боснић и Никола Кнежевић (веб-сајт фестивала);</li>
+        <li>Јелена Грујић, Душан Сиротко, Анастасија Џодан, Бојана
+        Нешић и Марија Јовановић (изглед почетне стране веб-сајта);</li>
+        <li>Анастасија Џодан, Душан Сиротко, Јелена Грујић и Марко
+        Николић (аутори прве позивнице);</li>
+        <li>Александар Миклич, Јелена Керкез, Ања Мичутка, Невена
+        Шаврљуга, Стефан Шавија и Ана Филиповић (аутори друге
+        позивнице);</li>
+          <li>Миња Стојиљковић, Јована Ненадић, Илина Давидовић и
+          Ђорђе Зрилић (аутори треће позивнице);</li>
+          <li>Јована Ољача, Тамара Чанади, Никола Бадањац и Марко
+          Родић (аутори четврте позивнице);</li>
+          <li>Марко Родић и Марко Николић (аутори музике на видео-
+          позивницима);</li>
+          <li>Петар Баљ и Стефан Шавија (профил фестивала на Инстаграму);</li>
+          <li>Милица Вулић и Настасија Шушиловић (ауторке текста: О
+          фестивалу) и Бојана Нешић (ауторка текстова на почетној
+          страници веб-сајта)</li>
+      </ul>
+      <div class="text-3">
+        <h2>Пријатељи и спонзори фестивала</h2>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
